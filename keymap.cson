@@ -1,0 +1,145 @@
+'atom-text-editor':
+  # ---------------------------------------------------
+  # Git
+  # prefix: g
+  #---------------------------------------------------
+
+  # Add commit and push - Single file
+  'ctrl-g a': 'git-plus:add' # Git(g) Add(a)
+  'ctrl-g c': 'git-plus:commit' # Git(g) Commit(c)
+  'ctrl-g a c': 'git-plus:add-and-commit' # Git(g) Add(a) Commit(c)
+  'ctrl-g a c p': 'git-plus:add-and-commit-and-push' # Git(g) Add(a) Commit(c) Push(p)
+
+  # Add commit and push - Multiple Files
+  'ctrl-g a a': 'git-plus:add-all' # Git(g) Add(a) All(a)
+  'ctrl-g a a m': 'git-plus:add-modified' # Git(g) Add(a) All(a) Modified(m)
+  'ctrl-g a a c': 'git-plus:add-all-and-commit' # Git(g) Add(a) All(a) Commit(c)
+  'ctrl-g a a c p': 'git-plus:add-all-commit-and-push' # Git(g) Add(a) All(a) Commit(c) Push(p)
+
+  # Ammend
+  'ctrl-g c a': 'git-plus:commit-amend' # Git(g) Commit(c) Ammend(a)
+
+  # Diff
+  'ctrl-g d f': 'git-plus:diff' # Git(g) Diff(d) File(f)
+  'ctrl-g d l': 'git-diff:toggle-diff-list' # Git(g) Diff(d) List(l)
+  'ctrl-g d a': 'git-plus:diff-all' # Git(g) Diff(d) All(a)
+
+  # Pull, Push & Fetch
+  'ctrl-g p l': 'git-plus:pull' # Git(g) Pull(p l)
+  'ctrl-g p s': 'git-plus:push' # Git(g) Push(p s)
+  'ctrl-g f': 'git-plus:fetch' # Git(g) Fetch(f)
+
+  # Branch
+  'ctrl-g b n': 'git-plus:new-branch' # Git(g) Branch(b) New(n)
+
+  # Branch Checkout
+  'ctrl-g b c .': 'git-plus:checkout' # Git(g) Branch(b) Checkout(c)
+  'ctrl-g b c r': 'git-plus:checkout-remote' # Git(g) Branch(b) Checkout(c) Remote(r)
+  'ctrl-g b c f': 'git-plus:checkout-current-file' # Git(g) Branch(b) Checkout(c) File(f)
+  'ctrl-g b c a': 'git-plus:checkout-all-files' # Git(g) Branch(b) Checkout(c) All(a)
+
+  # Branch delete
+  'ctrl-g b d l': 'git-plus:delete-local-branch' # Git(g) Branch(b) Delete(d) Local(l)
+  'ctrl-g b d r': 'git-plus:delete-remote-branch' # Git(g) Branch(b) Delete(d) Remote(r)
+
+  # Log
+  'ctrl-g l a': 'git-plus:log' # Git(g) Log(l) All(a)
+  'ctrl-g l f': 'git-plus:log-current-file' # Git(g) Log(l) File(f)
+
+  # Open(on github)
+  'ctrl-g o b': 'open-on-github:blame' # Git(g) Open(o) Blame(b)
+  'ctrl-g o r': 'open-on-github:repository' # Git(g) Open(o) Repository(r)
+  'ctrl-g o h': 'open-on-github:history' # Git(g) Open(o) History(h)
+  'ctrl-g o i': 'open-on-github:issues' # Git(g) Open(o) Issue(i)
+  'ctrl-g o f': 'open-on-github:file' # Git(g) Open(o) File(f)
+
+  # Blame
+  'ctrl-g b t': 'open-on-github:blame'
+
+  # Others
+  'ctrl-g c s': 'git-plus:show' # Git(g) Show(s) Commit(c)
+  'ctrl-g c p': 'git-plus:cherry-pick' # Git(g) Commit(c) Cherry Pick(p)
+  'ctrl-g s': 'git-plus:status' # Git(g) Status(s)
+  'ctrl-g h': 'git-plus:menu' # Git(g) help(h)
+
+
+  #---------------------------------------------------
+  # Tree view
+  #---------------------------------------------------
+  'ctrl-t a f': 'tree-view:add-file' # Tree(t) Add(a) File(f)
+  'ctrl-t a d': 'tree-view:add-folder' # Tree(t) Add(a) Directory(d)
+  'ctrl-t f': 'tree-view:toggle-focus' # Tree(t) Focus(f)
+  'ctrl-t t': 'tree-view:toggle' # Tree(t) Toggle(t)
+  'ctrl-t r': 'tree-view:reveal-active-file' # Tree(t) Reveal(r)
+
+
+  #---------------------------------------------------
+  # Find - Fuzzy finder
+  # prefix: f
+  #---------------------------------------------------
+  'ctrl-f f': 'fuzzy-finder:toggle-file-finder' # Find(f) File(f)
+  'ctrl-f p': 'project-find:show' # Find(f) Project(p)
+
+  #---------------------------------------------------
+  # Buffer
+  # prefix: b
+  #---------------------------------------------------
+  'ctrl-b l': 'fuzzy-finder:toggle-buffer-finder' # Buffer(b) List(l)
+  'ctrl-b f': 'find-and-replace:show' # Buffer(f) Find(f)
+  'ctrl-b g': 'goto-definition:go' # Buffer(f) Go to line(g)
+
+  #---------------------------------------------------
+  # Pane
+  # prefix: p
+  #---------------------------------------------------
+
+  # Split with arrows
+  'ctrl-p s up': 'pane:split-up-and-copy-active-item' # Pane(p) Split(s) up
+  'ctrl-p s right': 'pane:split-right-and-copy-active-item' # Pane(p) Split(s) right
+  'ctrl-p s down': 'pane:split-down-and-copy-active-item' # Pane(p) Split(s) down
+  'ctrl-p s left': 'pane:split-left-and-copy-active-item' # Pane(p) Split(s) left
+
+  # Split with w/d/s/a
+  'ctrl-p s w': 'pane:split-up-and-copy-active-item' # Pane(p) Split(s) up
+  'ctrl-p s d': 'pane:split-right-and-copy-active-item' # Pane(p) Split(s) right
+  'ctrl-p s s': 'pane:split-down-and-copy-active-item' # Pane(p) Split(s) down
+  'ctrl-p s a': 'pane:split-left-and-copy-active-item' # Pane(p) Split(s) left
+
+  # Show
+  'ctrl-p 1': 'pane:show-item-1'
+  'ctrl-p 2': 'pane:show-item-2'
+  'ctrl-p 3': 'pane:show-item-3'
+  'ctrl-p 4': 'pane:show-item-4'
+  'ctrl-p 5': 'pane:show-item-5'
+  'ctrl-p 6': 'pane:show-item-6'
+  'ctrl-p 7': 'pane:show-item-7'
+  'ctrl-p 8': 'pane:show-item-8'
+  'ctrl-p 9': 'pane:show-item-9'
+
+  # Focus
+  'alt-down': 'window:focus-pane-below'
+  'alt-left': 'window:focus-pane-on-left'
+  'alt-right': 'window:focus-pane-on-right'
+  'alt-up': 'window:focus-pane-above'
+
+
+  #---------------------------------------------------
+  # Window
+  # prefix: w
+  #---------------------------------------------------
+  'ctrl-w t f': 'window:toggle-full-screen' # Window(w) Toggle(t) Fullscreen(f)
+  'ctrl-w r': 'window:reload' # Window(w) Reload(r)
+  'ctrl-w w': 'window:close' # Window(w) w shortcut
+  'ctrl-w c': 'window:close' # Window(w) Close(c)
+  'ctrl-w s': 'core:save' # Window(w) Save(s)
+  'ctrl-w s c': 'custom:save-file-and-close' # Window(w) Save(s) Close(c)
+  'ctrl-w-n': 'application:new-window' # Window(w) New(n)
+  'ctrl-w o': 'application:open-folder' # Window(w) Open(o)
+
+
+  #---------------------------------------------------
+  # Alt key - miscellaneous & packages
+  #---------------------------------------------------
+
+  # Toggler - https://github.com/HiDeoo/toggler
+  'alt-w t': 'toggler:toggle' # Word(w) Toggle(t)
