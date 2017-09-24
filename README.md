@@ -6,3 +6,6 @@ I usually forget the keybinds, It never made sense for me, somethings you need p
 ## How to use it
 Mnemonic Key Bindings is not a plugin, it's `cson` file, you should customize it as your own taste and save on your `keymap.cson` file(`ctrl+shift+p`: Open Your Keymap).
 Feedbacks are welcome.
+1) Update your `keymap.cson` with [my own version](https://github.com/mateuspv/atom-mnemonic-keybindings/blob/master/keymap.cson)
+2) Update your `init.coffe` with [this file file](https://github.com/mateuspv/atom-mnemonic-keybindings/blob/master/init.coffee)
+3) Customize, change and send me feedback! :D
